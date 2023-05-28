@@ -7,7 +7,6 @@ class bus_ticket
     int price;
     float vat;
     string name,from,to;
-    //string _name;
     public:
     void menu();
     void administrator();
