@@ -289,7 +289,7 @@ public:
             cout << "\n---------------------------------------------\n";
             cout << "                Ticket Information              " << endl;
             cout << "\n---------------------------------------------\n";
-            cout << "NID\t\tTicket Name\t\tFrom\t\tTo\t\tPrice\t\tVat" << endl;
+            cout << "NID\t\tBus Name\t\tFrom\t\tTo\t\tPrice\t\tVat" << endl;
             data.open("database.txt", ios::in);
             data >> nid >> name >> from >> to >> price >> vat;
             while (!data.eof()) {
@@ -306,7 +306,6 @@ public:
             data.close();
             cout << "-----------------------------------------------" << endl;
             cout << "Total Amount: " << amount << endl;
-            cout << "Total Vat: " << vat << endl;
             total = amount + vat;
             cout << "-----------------------------------------------" << endl;
             cout << "Total Payable: " << total << endl;
